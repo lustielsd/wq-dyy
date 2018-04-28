@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'OMG of SRS'
-copyright = '2018, 王倩；邓媛媛'
-author = '王倩；邓媛媛'
+copyright = '2018, 王倩'
+author = '王倩'
 
 # The short X.Y version
 version = ''
@@ -129,7 +129,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'OMGofSRS.tex', 'OMG of SRS Documentation',
-     '王倩；邓媛媛', 'manual'),
+     '王倩', 'manual'),
 ]
 
 
