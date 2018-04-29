@@ -19,7 +19,7 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Introduction
+1.Introduction
 ============
      This document describes the Little Hill Lab's initial requirements for an onlineapplication (Oh My Genes) which allows our   scientists to upload gene expression filesand quickly get differentially expressed genes.
 
@@ -31,3 +31,10 @@ Introduction
 
 * :ref:`(1.3)Intended audience`
             Medical staff
+            
+2.Overall Description
+=====================
+* :ref:`(2.1)Product`
+            A web application preferably using the Flask framework (http://flask.pocoo.org/)
+* :ref:`(2.1)Domain knowledge`
+            Control sample - a cell sample prepared in its normal condition.Treatment sample - a cell sample treated by special chemicals, or in which some genesare altered.Differentially expressed genes - the genes which have significantly differentexpression levels between two samples.Up-regulation - a gene is said to be up-regulated if it has higher expression intreatment than in control.logFC - log fold change of gene expression. log_2 [T/C], where T is the geneexpression level from a treatment sample, while C is the gene expression level from acontrol sample.
