@@ -23,3 +23,4 @@ Introduction
 ============
 
 * :ref:`(1)Purpose`
+To identify differentially expressed genes given a gene expression file containingtwo cell samples.
