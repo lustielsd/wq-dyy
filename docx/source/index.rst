@@ -51,8 +51,8 @@ Indices and tables
         * :ref:`AT1G01020 13.75736234 13.370796`    
         * :ref:`AT1G01030 0.833779536 0.203616183`    
         * :ref:`AT1G01040 9.58846466 7.126566394`  
-        * :ref:`AT1G01046 0 0`   AT1G01046 0 0
-        * :ref:``   AT1G01050 23.81482799 21.10821094
+        * :ref:`AT1G01046 0 0`  
+        * :ref:` AT1G01050 23.81482799 21.10821094`  
         * :ref:` AT1G01050 23.81482799 21.10821094`  
         * :ref:`AT1G01070 1.719670292 0.950208853` 
         * :ref:`AT1G01080 28.34850421 25.24840665`  
@@ -70,12 +70,13 @@ Indices and tables
 ======================
  * :ref:`(4.1)the system's front page`
            oh my genes software team, the first Linux server oriented web page visualization analysis system, the leading B/S architecture, specifically for bacterial genome sequencing data analysis. Help you do one-stop, data quality control, sequence assembly, gene prediction, gene annotation.
+ (1）The system is mature, stable and friendly based on Galaxy open source framework.
+（2）Zero base, no command line, and programming skills
+（3）Integrated sample management and data management functions
+（4）The analysis modules are derived from the widely accepted algorithms and open source programs in the published literature.   
 
-           (1）The system is mature, stable and friendly based on Galaxy open source framework.
-          （2）Zero base, no command line, and programming skills
-          （3）Integrated sample management and data management functions
-          （4）The analysis modules are derived from the widely accepted algorithms and open source programs in the published literature.
- * :ref:`(4.2)Analysis function list` 
+
+* :ref:`(4.2)Analysis function list` 
              Original data quality control： The analysis module creates a PE library directory under the selected sample directory, imports the original PE sequencing data in the History Panel, and uses Trimmomatic PE to cut and filter. Thus, the optimized sequence of the sample is obtained. Note that the name of the library is composed of numbers, letters and underlines, and the beginning and the end cannot be underlined. If the library catalog already exists, it cannot be created, and indicates that the Library Directory has an error.
              
              
