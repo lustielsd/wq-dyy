@@ -46,21 +46,23 @@ Indices and tables
  * :ref:`(3.2)Input`
           A valid submitted gene expression file has the following format. It is a TAB-delimited, plain text file with three columns (see the attached file for a full example). The file contains an optional head line, followed by each gene'sexpression in a control sample (e.g., ControlSample) and in a treatment sample (e.g.,KnockOutSample)
           
-          
-          gene_id ControlSample KnockOutSample
-          AT1G01010 1.198558083 2.036161827
-          AT1G01020 13.75736234 13.370796
-          AT1G01030 0.833779536 0.203616183
-          AT1G01040 9.58846466 7.126566394
-          AT1G01046 0 0
-          AT1G01050 23.81482799 21.10821094
-          AT1G01060 0.625334652 1.221697096
-          AT1G01070 1.719670292 0.950208853
-          AT1G01080 28.34850421 25.24840665
-          AT1G01090 58.26034505 42.96301455
-          AT1G01100 1066.508249 1308.030358
-          AT1G01110 2.709783491 1.425313279
- * :ref:`(3.3)Output`
+    gene_id ControlSample KnockOutSample
+        * :ref:` AT1G01010 1.198558083 2.036161827`  
+        * :ref:`AT1G01020 13.75736234 13.370796`    
+        * :ref:`AT1G01030 0.833779536 0.203616183`    
+        * :ref:`AT1G01040 9.58846466 7.126566394`  
+        * :ref:`AT1G01046 0 0`   AT1G01046 0 0
+        * :ref:``   AT1G01050 23.81482799 21.10821094
+        * :ref:` AT1G01050 23.81482799 21.10821094`  
+        * :ref:`AT1G01070 1.719670292 0.950208853` 
+        * :ref:`AT1G01080 28.34850421 25.24840665`  
+        * :ref:`AT1G01090 58.26034505 42.96301455`  
+        * :ref:`AT1G01100 1066.508249 1308.030358`  
+        * :ref:`AT1G01110 2.709783491 1.425313279`  
+  
+  
+  
+* :ref:`(3.3)Output`
           The web application displays a table and a scatter plot given a gene expression file.The table contains a list of differentially expressed genes with the followingformat:gene_id control_sample treat_sample log_2[FC]AT1G01010 1.198558083 2.036161827 0.76The scatter plot displays differentially expressed genes. The X-axis is Control, andY-axis is Treatment.Replace 'Control' and 'Treatment' with appropriated column names if provided in theuploaded file. The up-regulated genes are shown in red dots, and down-regulatedgenes are shown in blue
   
   
@@ -74,8 +76,15 @@ Indices and tables
           （3）Integrated sample management and data management functions
           （4）The analysis modules are derived from the widely accepted algorithms and open source programs in the published literature.
  * :ref:`(4.2)Analysis function list` 
-             The analysis module creates a PE library directory under the selected sample directory, imports the original PE sequencing data in the History Panel, and uses Trimmomatic PE to cut and filter. Thus, the optimized sequence of the sample is obtained. Note that the name of the library is composed of numbers, letters and underlines, and the beginning and the end cannot be underlined. If the library catalog already exists, it cannot be created, and indicates that the Library Directory has an error.
-  
+             Original data quality control： The analysis module creates a PE library directory under the selected sample directory, imports the original PE sequencing data in the History Panel, and uses Trimmomatic PE to cut and filter. Thus, the optimized sequence of the sample is obtained. Note that the name of the library is composed of numbers, letters and underlines, and the beginning and the end cannot be underlined. If the library catalog already exists, it cannot be created, and indicates that the Library Directory has an error.
+             
+             
+             Raw data statistics：The analysis module, according to the selected samples, carries on the data statistics to the imported sequencing sequence.
+The analysis module refers to FASTX-Toolkit v0.0.13 software (http://hannonlab.cshl.edu/fastx_toolkit/index.html).
+
+
+             The web application： has a simple interface with a single button [Upload and GO]. Ourscientists upload a plain text file containing gene expression levels from twosamples, representing two experimental conditions. Accepting the file, the softwarewill return a table of differentially expressed genes and a scatter plot of thesegenes whose X-axis is control and Y-axis is treatment. If an invalid gene expressionis given, the web application returns a page informing the user to provide thecorrect format
+  
  5.use case
 ==========
 * :ref:`(5.1)use case`
