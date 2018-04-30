@@ -62,10 +62,36 @@ Indices and tables
           AT1G01110 2.709783491 1.425313279
  * :ref:`(3.3)Output`
           The web application displays a table and a scatter plot given a gene expression file.The table contains a list of differentially expressed genes with the followingformat:gene_id control_sample treat_sample log_2[FC]AT1G01010 1.198558083 2.036161827 0.76The scatter plot displays differentially expressed genes. The X-axis is Control, andY-axis is Treatment.Replace 'Control' and 'Treatment' with appropriated column names if provided in theuploaded file. The up-regulated genes are shown in red dots, and down-regulatedgenes are shown in blue
-          
-4.use case
+  
+  
+4.oh my genes system
+======================
+ * :ref:`(4.1)the system's front page`
+           oh my genes software team, the first Linux server oriented web page visualization analysis system, the leading B/S architecture, specifically for bacterial genome sequencing data analysis. Help you do one-stop, data quality control, sequence assembly, gene prediction, gene annotation.
+
+           (1）The system is mature, stable and friendly based on Galaxy open source framework.
+          （2）Zero base, no command line, and programming skills
+          （3）Integrated sample management and data management functions
+          （4）The analysis modules are derived from the widely accepted algorithms and open source programs in the published literature.
+ * :ref:`(4.2)Analysis function list` 
+             The analysis module creates a PE library directory under the selected sample directory, imports the original PE sequencing data in the History Panel, and uses Trimmomatic PE to cut and filter. Thus, the optimized sequence of the sample is obtained. Note that the name of the library is composed of numbers, letters and underlines, and the beginning and the end cannot be underlined. If the library catalog already exists, it cannot be created, and indicates that the Library Directory has an error.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+5.use case
 ==========
-* :ref:`(4.1)use case`
+* :ref:`(5.1)use case`
          RNA-seq technology is rapidly innovated in genomics research, and the statistical methods of RNA-seq data are developing. Timely review and comparison of recent statistical methods can provide a useful guide for selecting suitable methods for data analysis. People have a liking for the ability to detect differentially expressed genes. Here we compare four recent statistical methods, edgeR, DESeq, baySeq, and a two step Poisson model (TSPM) method based on a series of simulation based on different distribution models or real data. We compared the ability of these methods to detect differentially expressed genes according to the significance of sorting genes and false positive rates. All comparison methods are implemented with freely available software. We also discussed the usability and functionality of these software versions currently available. "
          
          Comparison of 1, RNA-seq and microarray
