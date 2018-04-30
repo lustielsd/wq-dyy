@@ -47,18 +47,18 @@ Indices and tables
           A valid submitted gene expression file has the following format. It is a TAB-delimited, plain text file with three columns (see the attached file for a full example). The file contains an optional head line, followed by each gene'sexpression in a control sample (e.g., ControlSample) and in a treatment sample (e.g.,KnockOutSample)
           
     gene_id ControlSample KnockOutSample
-        * :ref:` AT1G01010 1.198558083 2.036161827`  
-        * :ref:`AT1G01020 13.75736234 13.370796`    
-        * :ref:`AT1G01030 0.833779536 0.203616183`    
-        * :ref:`AT1G01040 9.58846466 7.126566394`  
-        * :ref:`AT1G01046 0 0`  
-        * :ref:` AT1G01050 23.81482799 21.10821094`  
-        * :ref:` AT1G01050 23.81482799 21.10821094`  
-        * :ref:`AT1G01070 1.719670292 0.950208853` 
-        * :ref:`AT1G01080 28.34850421 25.24840665`  
-        * :ref:`AT1G01090 58.26034505 42.96301455`  
-        * :ref:`AT1G01100 1066.508249 1308.030358`  
-        * :ref:`AT1G01110 2.709783491 1.425313279`  
+        * :ref: ` AT1G01010  1.198558083  2.036161827`  
+        * :ref: ` AT1G01020  13.75736234  13.370796`    
+        * :ref: ` AT1G01030  0.833779536  0.203616183`    
+        * :ref: ` AT1G01040  9.58846466   7.126566394`  
+        * :ref: ` AT1G01046  0             0`  
+        * :ref: ` AT1G01050  23.81482799  21.10821094`  
+        * :ref: ` AT1G01050  23.81482799  21.10821094`  
+        * :ref: ` AT1G01070  1.719670292  0.950208853` 
+        * :ref: ` AT1G01080  28.34850421  25.24840665`  
+        * :ref: ` AT1G01090  58.26034505  42.96301455`  
+        * :ref: ` AT1G01100  1066.508249  1308.030358`  
+        * :ref: ` AT1G01110  2.709783491  1.425313279`  
   
   
   
@@ -87,7 +87,7 @@ The analysis module refers to FASTX-Toolkit v0.0.13 software (http://hannonlab.c
              The web application： has a simple interface with a single button [Upload and GO]. Ourscientists upload a plain text file containing gene expression levels from twosamples, representing two experimental conditions. Accepting the file, the softwarewill return a table of differentially expressed genes and a scatter plot of thesegenes whose X-axis is control and Y-axis is treatment. If an invalid gene expressionis given, the web application returns a page informing the user to provide thecorrect format
   
  5.use case
-==========
+ ==========
 * :ref:`(5.1)use case`
          RNA-seq technology is rapidly innovated in genomics research, and the statistical methods of RNA-seq data are developing. Timely review and comparison of recent statistical methods can provide a useful guide for selecting suitable methods for data analysis. People have a liking for the ability to detect differentially expressed genes. Here we compare four recent statistical methods, edgeR, DESeq, baySeq, and a two step Poisson model (TSPM) method based on a series of simulation based on different distribution models or real data. We compared the ability of these methods to detect differentially expressed genes according to the significance of sorting genes and false positive rates. All comparison methods are implemented with freely available software. We also discussed the usability and functionality of these software versions currently available. "
          
@@ -95,3 +95,9 @@ The analysis module refers to FASTX-Toolkit v0.0.13 software (http://hannonlab.c
 "Compared to the hybrid microarray technology, RNA-seq has a number of advantages, including a larger level of expression, more information to detect allelic specific expression, new promoter, new subtype, lower noise, and higher flux. Therefore, RNA-seq is preparing to replace microarray technology in the next few years to become a major platform for gene expression research.
 2, RNA-seq experiment and analysis technology summary
 "In a typical RNA-seq experiment, a RNA sample is converted into a cDNA fragment library, and then sequenced on a high - throughput commercial platform, such as the Genome Analyzer of the Illumina, the HeliScope of the Helicos BioSciences, the SOLiD of Applied Biosystems, and the Sequencing system. Raw data consist of a large number of DNA fragment sequences (called reads), which need to undergo a series of analysis steps. Oshlack et al. (2010) provides an excellent review of the analysis process, which includes mapping reads, summarizing the reads counts of each gene, normalization and detection of differentially expressed genes. Table 1 provides a list of software for each step analysis. In general, the reads produced by RNA-seq studies should be assigned to genes or other taxa based on mapping to the target genome or de novo assembly transcriptome. Some quantitative methods for gene expression level of RNA-seq data are still being studied. The complexity of variable shear transcripts and subtypes makes it an active research area. Because subtype detection is not the focus of this article, interested readers can refer to references of Hiller (2009) and Salzman (2011) and their estimation of subtype abundance in RNA-seq data. "Gene" is a generalized term that we use throughout the rest of this article. It can refer to a single exon or exon of a gene model or all exons. Gene expression is measured by mapping the number of reads to a gene. Therefore, RNA-seq produces a discrete measure of gene expression, which is different from the fluorescence intensity measure which can be regarded as continuous variable in microarray technology. Therefore, the statistical methods used to analyze microarray data can not be applied directly, and it is urgent to develop a suitable statistical method to deal with massive RNA-seq data. "
+
+
+6.response  time
+================
+<5 seconds.
+
