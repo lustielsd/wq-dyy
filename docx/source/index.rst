@@ -46,19 +46,19 @@ Indices and tables
  * :ref:`(3.2)Input`
           A valid submitted gene expression file has the following format. It is a TAB-delimited, plain text file with three columns (see the attached file for a full example). The file contains an optional head line, followed by each gene'sexpression in a control sample (e.g., ControlSample) and in a treatment sample (e.g.,KnockOutSample)
           
-    gene_id ControlSample KnockOutSample
-        * :ref: ` AT1G01010  1.198558083  2.036161827`  
-        * :ref: ` AT1G01020  13.75736234  13.370796`    
-        * :ref: ` AT1G01030  0.833779536  0.203616183`    
-        * :ref: ` AT1G01040  9.58846466   7.126566394`  
-        * :ref: ` AT1G01046  0             0`  
-        * :ref: ` AT1G01050  23.81482799  21.10821094`  
-        * :ref: ` AT1G01050  23.81482799  21.10821094`  
-        * :ref: ` AT1G01070  1.719670292  0.950208853` 
-        * :ref: ` AT1G01080  28.34850421  25.24840665`  
-        * :ref: ` AT1G01090  58.26034505  42.96301455`  
-        * :ref: ` AT1G01100  1066.508249  1308.030358`  
-        * :ref: ` AT1G01110  2.709783491  1.425313279`  
+gene_id ControlSample KnockOutSample
+        * :ref:` AT1G01010  1.198558083  2.036161827`  
+        * :ref:` AT1G01020  13.75736234  13.370796`    
+        * :ref:` AT1G01030  0.833779536  0.203616183`    
+        * :ref:` AT1G01040  9.58846466   7.126566394`  
+        * :ref:` AT1G01046  0             0`  
+        * :ref:` AT1G01050  23.81482799  21.10821094`  
+        * :ref:` AT1G01050  23.81482799  21.10821094`  
+        * :ref:` AT1G01070  1.719670292  0.950208853` 
+        * :ref:` AT1G01080  28.34850421  25.24840665`  
+        * :ref:` AT1G01090  58.26034505  42.96301455`  
+        * :ref:` AT1G01100  1066.508249  1308.030358`  
+        * :ref:` AT1G01110  2.709783491  1.425313279`  
   
   
   
@@ -86,8 +86,10 @@ The analysis module refers to FASTX-Toolkit v0.0.13 software (http://hannonlab.c
 
              The web application： has a simple interface with a single button [Upload and GO]. Ourscientists upload a plain text file containing gene expression levels from twosamples, representing two experimental conditions. Accepting the file, the softwarewill return a table of differentially expressed genes and a scatter plot of thesegenes whose X-axis is control and Y-axis is treatment. If an invalid gene expressionis given, the web application returns a page informing the user to provide thecorrect format
   
- 5.use case
- ==========
+  
+5.use case
+==========
+
 * :ref:`(5.1)use case`
          RNA-seq technology is rapidly innovated in genomics research, and the statistical methods of RNA-seq data are developing. Timely review and comparison of recent statistical methods can provide a useful guide for selecting suitable methods for data analysis. People have a liking for the ability to detect differentially expressed genes. Here we compare four recent statistical methods, edgeR, DESeq, baySeq, and a two step Poisson model (TSPM) method based on a series of simulation based on different distribution models or real data. We compared the ability of these methods to detect differentially expressed genes according to the significance of sorting genes and false positive rates. All comparison methods are implemented with freely available software. We also discussed the usability and functionality of these software versions currently available. "
          
