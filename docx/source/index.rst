@@ -76,20 +76,7 @@ Indices and tables
  * :ref:`(4.2)Analysis function list` 
              The analysis module creates a PE library directory under the selected sample directory, imports the original PE sequencing data in the History Panel, and uses Trimmomatic PE to cut and filter. Thus, the optimized sequence of the sample is obtained. Note that the name of the library is composed of numbers, letters and underlines, and the beginning and the end cannot be underlined. If the library catalog already exists, it cannot be created, and indicates that the Library Directory has an error.
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-5.use case
+ 5.use case
 ==========
 * :ref:`(5.1)use case`
          RNA-seq technology is rapidly innovated in genomics research, and the statistical methods of RNA-seq data are developing. Timely review and comparison of recent statistical methods can provide a useful guide for selecting suitable methods for data analysis. People have a liking for the ability to detect differentially expressed genes. Here we compare four recent statistical methods, edgeR, DESeq, baySeq, and a two step Poisson model (TSPM) method based on a series of simulation based on different distribution models or real data. We compared the ability of these methods to detect differentially expressed genes according to the significance of sorting genes and false positive rates. All comparison methods are implemented with freely available software. We also discussed the usability and functionality of these software versions currently available. "
